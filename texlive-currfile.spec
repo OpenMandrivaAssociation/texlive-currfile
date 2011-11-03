@@ -1,3 +1,9 @@
+# revision 24047
+# category Package
+# catalog-ctan /macros/latex/contrib/currfile
+# catalog-date 2011-09-18 19:15:59 +0200
+# catalog-license lppl1.3
+# catalog-version 0.5
 Name:		texlive-currfile
 Version:	0.5
 Release:	1
@@ -49,6 +55,7 @@ of such a file. The package supersedes FiNK.
 #- source
 %doc %{_texmfdistdir}/source/latex/currfile/currfile.dtx
 %doc %{_texmfdistdir}/source/latex/currfile/currfile.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ of such a file. The package supersedes FiNK.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
