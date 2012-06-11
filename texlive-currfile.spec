@@ -1,12 +1,12 @@
-# revision 24047
+# revision 26259
 # category Package
 # catalog-ctan /macros/latex/contrib/currfile
-# catalog-date 2011-09-18 19:15:59 +0200
+# catalog-date 2012-05-07 19:24:22 +0200
 # catalog-license lppl1.3
-# catalog-version 0.5
+# catalog-version 0.6
 Name:		texlive-currfile
-Version:	0.5
-Release:	2
+Version:	0.6
+Release:	1
 Summary:	Macros for file name and path of input files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/currfile
@@ -39,6 +39,7 @@ of such a file. The package supersedes FiNK.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/currfile/currfile-abspath.sty
 %{_texmfdistdir}/tex/latex/currfile/currfile.sty
 %doc %{_texmfdistdir}/doc/latex/currfile/README
 %doc %{_texmfdistdir}/doc/latex/currfile/currfile.pdf
