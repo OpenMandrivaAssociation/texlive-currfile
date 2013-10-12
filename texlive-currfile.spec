@@ -1,13 +1,13 @@
-# revision 26259
+# revision 29012
 # category Package
 # catalog-ctan /macros/latex/contrib/currfile
-# catalog-date 2012-05-07 19:24:22 +0200
+# catalog-date 2013-02-02 11:38:19 +0100
 # catalog-license lppl1.3
-# catalog-version 0.6
+# catalog-version 0.7b
 Name:		texlive-currfile
-Version:	0.6
+Version:	0.7b
 Release:	1
-Summary:	Macros for file name and path of input files
+Summary:	Provide file name and path of input files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/currfile
 License:	LPPL1.3
@@ -27,7 +27,10 @@ file hooks provided by the author's filehook. In particular, it
 restores the parent file name after the trailing \clearpage of
 an \included file; as a result, the macros may be usefully
 employed in the page header and footer of the last printed page
-of such a file. The package supersedes FiNK.
+of such a file. The depth of inclusion is made available,
+together with the "parent" (including file) and "parents" (all
+including files to the root of the tree). The package
+supersedes FiNK.
 
 %post
     %{_sbindir}/texlive.post
@@ -56,21 +59,3 @@ of such a file. The package supersedes FiNK.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.6-1
-+ Revision: 804565
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.5-2
-+ Revision: 750748
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.5-1
-+ Revision: 718185
-- texlive-currfile
-- texlive-currfile
-- texlive-currfile
-- texlive-currfile
-
