@@ -6,7 +6,7 @@
 # catalog-version 0.7b
 Name:		texlive-currfile
 Version:	0.7b
-Release:	2
+Release:	3
 Summary:	Provide file name and path of input files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/currfile
