@@ -1,6 +1,6 @@
 Name:		texlive-currfile
 Version:	64673
-Release:	1
+Release:	2
 Summary:	Provide file name and path of input files
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/currfile
